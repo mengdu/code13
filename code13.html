@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>网页标题</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+		 *{margin:0 auto}
+			#bg{
+				margin-top:100px;
+				width:600px;
+				height:200px;
+			}
+		</style>
+	</head>
+	<body>
+			
+		<div id="bg" >
+			<img src="code13.php" id="img"><br>
+			<input type="text" name="code" id="t"/>
+			<input type="submit" value="提交" onclick="change()"/>
+			<script >
+				var img=document.getElementById("img");
+				var t=document.getElementById("t");
+				function change(){
+					img.src="code13.php?code="+t.value;
+				}
+			</script>
+		</div>
+	</body>
+</html>
